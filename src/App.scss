@@ -1,0 +1,109 @@
+
+header{
+  background-color: #222;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo h5{
+    font-size: 30px;
+    color: #fff;
+    span{
+      color: gold;
+    }
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    li{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      color: #f5f5f5;
+      &:nth-child(1){
+        padding: 10px 30px;
+        background-color: #ddbc01;
+        border-radius: 100vw;
+        color: #222;
+      }
+    }
+  }
+}
+.container{
+  padding: 2rem 4rem;
+}
+.hero{
+  color: #fff;
+  text-align: center;
+  h1{
+    color: #f3f3f3;
+    font-size: 100px;
+    margin-bottom: 2rem;
+    line-height: 120px;
+    span{
+      background: linear-gradient(45deg, rgb(255, 255, 83), rgb(255, 124, 58), gold);
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+  p{
+    color: #ddd;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.chart-container{
+  width: 80%;
+  height: 650px;
+  margin: 2rem auto;
+  box-shadow: 0 0 30px #2c2c2cb9;
+}
+
+// stock styling
+.loader{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2f2f2fbd;
+}
+.stock-container{
+  margin-top: 2rem;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .stock-item{
+    padding: 1rem;
+    background: #2228;
+    border-radius: 7px;
+    display: grid;
+    gap: 10px;
+    font-size: 13px;
+    transition: 300ms all ease;
+    .stock-item-name{
+      font-size: 19px;
+      color: rgb(200, 141, 4);
+    }
+    .stock-item-child{
+      line-height: 20px;
+      letter-spacing: 1px;
+      &.symbol{
+        font-size: 12px;
+        color: #adadad;
+      }
+      a{
+        text-decoration: none;
+        color: rgb(198, 249, 188);
+      }
+    }
+    &:hover{
+      transform: translateY(-7px);
+      background-color: #4448;
+    }
+  }
+}
