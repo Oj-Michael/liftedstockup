@@ -92,16 +92,22 @@ header{
     .stock-item-child{
       line-height: 20px;
       letter-spacing: 1px;
+      
       &.symbol{
         font-size: 12px;
         color: #adadad;
       }
+      &.weblink{
+display: flex;
+      align-item: center;
+      gap: 5px;
+}
       a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: inline-block; 
-  max-width: 170px;
+  max-width: 200px;
   text-decoration: none;
   color: #c6f9bc;
 }
