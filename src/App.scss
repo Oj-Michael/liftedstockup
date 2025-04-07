@@ -107,3 +107,41 @@ header{
     }
   }
 }
+
+@media only screen and (max-width: 550px){
+  header{
+    padding: 1rem;
+    .logo h5{
+      font-size: 15px;
+    }
+    nav ul{
+      gap: 20px;
+      li{
+        font-size: 13px;
+        gap: 4px;
+        &:nth-child(1){
+          padding: 7px 12px;
+        }
+      }
+    }
+  }
+  .container{
+    padding: 1rem;
+  }
+  .hero {
+    h1{
+      font-size: 55px;
+      line-height: 70px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  .chart-container{
+    width: 85%;
+    height: 300px;
+  }
+  .stock-container{
+    gap: 15px;
+  }
+}
