@@ -88,7 +88,7 @@ const StockList: React.FC = () => {
               <p className="stock-item-child symbol">{stock.symbol}</p>
               <p className="stock-item-child">Sector: {stock.sector}</p>
               <p className="stock-item-child">Industry: {stock.industry}</p>
-              <p className="stock-item-child">
+              <p className="stock-item-child weblink">
                 Website:
                 <a
                   href={stock.website}
