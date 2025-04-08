@@ -90,10 +90,7 @@ const StockList: React.FC = () => {
               <p className="stock-item-child">Industry: {stock.industry}</p>
               <p className="stock-item-child weblink">
                 Website:
-                <a
-                  href={stock.website}
-                  target="_blank"
-                >
+                <a href={stock.website} target="_blank">
                   {stock.website}
                 </a>
               </p>

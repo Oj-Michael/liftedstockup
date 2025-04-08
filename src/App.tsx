@@ -28,10 +28,16 @@ function App() {
       </header>
       <div className="hero">
         <div className="container">
-          <h1><span>The center of the</span>
-            <br />financial web
+          <h1>
+            <span>The center of the</span>
+            <br />
+            financial web
           </h1>
-          <p>Browse major stocks, follow the trends and make your major financial decision here! <br />Research and find the right time to buy/sell your stocks</p>
+          <p>
+            Browse major stocks, follow the trends and make your major financial
+            decision here! <br />
+            Research and find the right time to buy/sell your stocks
+          </p>
         </div>
       </div>
       <TradingViewWidget />

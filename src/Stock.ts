@@ -19,6 +19,5 @@ export const stockSymbols = [
     { symbol: "MET", name: "MetLife Inc." },
     { symbol: "ALL", name: "Allstate Corp." },
     { symbol: "TRV", name: "Travelers Companies Inc." },
-    { symbol: "STT", name: "State Street Corp." },
   ];
   

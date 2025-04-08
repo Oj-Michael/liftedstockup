@@ -1,14 +1,13 @@
-
-header{
+header {
   background-color: #222;
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .logo h5{
+  .logo h5 {
     font-size: 30px;
     color: #fff;
-    span{
+    span {
       color: gold;
     }
   }
@@ -17,13 +16,13 @@ header{
     align-items: center;
     gap: 40px;
     list-style: none;
-    li{
+    li {
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: 18px;
       color: #f5f5f5;
-      &:nth-child(1){
+      &:nth-child(1) {
         padding: 10px 30px;
         background-color: #ddbc01;
         border-radius: 100vw;
@@ -32,32 +31,37 @@ header{
     }
   }
 }
-.container{
+.container {
   padding: 2rem 4rem;
 }
-.hero{
+.hero {
   color: #fff;
   text-align: center;
-  h1{
+  h1 {
     color: #f3f3f3;
     font-size: 100px;
     margin-bottom: 2rem;
     line-height: 120px;
-    span{
-      background: linear-gradient(45deg, rgb(255, 255, 83), rgb(255, 124, 58), gold);
+    span {
+      background: linear-gradient(
+        45deg,
+        rgb(255, 255, 83),
+        rgb(255, 124, 58),
+        gold
+      );
       color: transparent;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
   }
-  p{
+  p {
     color: #ddd;
     font-size: 20px;
     line-height: 25px;
   }
 }
 
-.chart-container{
+.chart-container {
   width: 80%;
   height: 650px;
   margin: 2rem auto;
@@ -65,19 +69,19 @@ header{
 }
 
 // stock styling
-.loader{
+.loader {
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #2f2f2fbd;
 }
-.stock-container{
+.stock-container {
   margin-top: 2rem;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  .stock-item{
+  .stock-item {
     padding: 1rem;
     background: #2228;
     border-radius: 7px;
@@ -85,79 +89,78 @@ header{
     gap: 10px;
     font-size: 13px;
     transition: 300ms all ease;
-    .stock-item-name{
+    .stock-item-name {
       font-size: 19px;
       color: rgb(200, 141, 4);
     }
-    .stock-item-child{
+    .stock-item-child {
       line-height: 20px;
       letter-spacing: 1px;
-      
-      &.symbol{
+
+      &.symbol {
         font-size: 12px;
         color: #adadad;
       }
-      &.weblink{
-display: flex;
-      align-item: center;
-      gap: 5px;
-}
+      &.weblink {
+        display: flex;
+        align-item: center;
+        gap: 5px;
+      }
       a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-block; 
-  max-width: 200px;
-  text-decoration: none;
-  color: #c6f9bc;
-}
-
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 200px;
+        text-decoration: none;
+        color: #c6f9bc;
+      }
     }
-    &:hover{
+    &:hover {
       transform: translateY(-7px);
       background-color: #4448;
     }
   }
 }
 
-@media only screen and (max-width: 550px){
-  header{
+@media only screen and (max-width: 550px) {
+  header {
     padding: 1rem;
-    .logo h5{
+    .logo h5 {
       font-size: 15px;
     }
-    nav ul{
+    nav ul {
       gap: 20px;
-      li{
+      li {
         font-size: 13px;
         gap: 4px;
-        &:nth-child(1){
+        &:nth-child(1) {
           padding: 7px 12px;
         }
       }
     }
   }
-  .container{
+  .container {
     padding: 1rem;
   }
   .hero {
-    h1{
-      span{
-     font-size: 36px;
-}
+    h1 {
+      span {
+        font-size: 36px;
+      }
       font-size: 57px;
       line-height: 65px;
     }
-    p{
+    p {
       text-align: left;
       font-size: 14px;
     }
   }
-  .chart-container{
+  .chart-container {
     width: 85%;
     height: 300px;
   }
-  .stock-container{
+  .stock-container {
     gap: 15px;
   }
 }
