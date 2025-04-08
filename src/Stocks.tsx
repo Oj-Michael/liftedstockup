@@ -93,8 +93,6 @@ const StockList: React.FC = () => {
                 <a
                   href={stock.website}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
                 >
                   {stock.website}
                 </a>
